@@ -6,7 +6,7 @@ This project was built with **React** and showcases interactive animations purel
 
 ## Live Demo
 
-Check out the live version of the project [here]([https://your-deployment-url.com](https://spinning-object.vercel.app/)).
+Check out the live version of the project [https://spinning-object.vercel.app/].
 
 ## Features
 
