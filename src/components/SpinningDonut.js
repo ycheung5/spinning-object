@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const DynamicSpinningObject = ({ width, height, aRotation, bRotation }) => {
+const SpinningDonut = ({ width, height, aRotation, bRotation, hidden }) => {
     const asciiRef = useRef(null);
     const [A, setA] = useState(1);
     const [B, setB] = useState(1);
 
     useEffect(() => {
-        let tmr1;
+        let animationFrameId;
 
-        const asciiframe = () => {
+        const asciiFrame = () => {
             const numCols = width; // Dynamic width (number of columns)
             const numRows = height; // Dynamic height (number of rows)
             const totalCells = numCols * numRows; // Total number of cells in the grid
@@ -48,19 +48,31 @@ const DynamicSpinningObject = ({ width, height, aRotation, bRotation }) => {
                 }
             }
 
-            if (asciiRef.current) asciiRef.current.innerHTML = b.join("");
+            let output = "";
+            for (let i = 0; i < totalCells; i++) {
+                output += b[i];
+                if ((i + 1) % numCols === 0) {
+                    output += "\n";
+                }
+            }
+
+            if (asciiRef.current) {
+                asciiRef.current.innerText = output;
+            }
             setA(newA);
             setB(newB);
+
+            animationFrameId = requestAnimationFrame(asciiFrame);
         };
 
         // Start animation
-        tmr1 = setInterval(asciiframe, 50);
+        animationFrameId = requestAnimationFrame(asciiFrame);
 
         // Cleanup interval on component unmount
-        return () => clearInterval(tmr1);
+        return () => cancelAnimationFrame(animationFrameId);
     }, [A, B, width, height, aRotation, bRotation]);
 
-    return <pre ref={asciiRef} className={"font-mono text-pretty"}></pre>;
+    return <pre ref={asciiRef} className={"font-light text-sm text-pretty"} hidden={hidden}></pre>;
 };
 
-export default DynamicSpinningObject;
+export default SpinningDonut;
