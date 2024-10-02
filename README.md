@@ -82,15 +82,4 @@ This project was created for fun and as a way to practice coding skills. The mai
 * Real-time Updates: Rendering the shapes dynamically based on user input and keeping the animation smooth with requestAnimationFrame.
 
 
----
-
-### Key Additions for Deployment:
-
-1. **Live Demo**: Added a section linking to your deployed version (replace the placeholder URL with the actual link to your deployed site).
-2. **Deployment Instructions**: Detailed how users can run the project locally and how it is deployed using services like **Netlify** or **Vercel**.
-3. **Deployment Steps**: Instructions on how you can deploy the project, useful if others want to replicate your setup.
-
-When you deploy the project, simply replace `your-deployment-url.com` with the actual URL where the project is live, and update the repository link with the correct one from your GitHub.
-
-Let me know if you'd like further adjustments or details added!
 
