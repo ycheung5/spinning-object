@@ -84,7 +84,8 @@ For **manual deployment**, you can build the app and deploy it to a static host:
 npm run build
 # Deploy the contents of the "build" folder to your host
 ```
-##Case Study
+### Case Study
+
 This project was created for fun and as a way to practice coding skills. The main challenge was rendering spinning 3D shapes using only ASCII characters, which required:
 <br>
 * Mathematical Transformations: Rotating the objects in 3D space and projecting them onto a 2D plane.
