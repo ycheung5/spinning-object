@@ -19,6 +19,7 @@ To set up this project locally, clone the repository and install the necessary d
 git clone https://github.com/your-username/spinning-shapes.git
 cd spinning-shapes
 npm install
+```
 
 
 ---
