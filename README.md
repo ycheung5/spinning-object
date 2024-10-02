@@ -6,7 +6,7 @@ This project was built with **React** and showcases interactive animations purel
 
 ## Live Demo
 
-Check out the live version of the project [here](https://your-deployment-url.com).
+Check out the live version of the project [here]([https://your-deployment-url.com](https://spinning-object.vercel.app/)).
 
 ## Features
 
@@ -66,19 +66,8 @@ This project was built to practice and experiment with **3D transformations** an
 
 ## Deployment
 
-The project is deployed using **[service/host name]** (e.g., Netlify, Vercel, GitHub Pages).
+The project is deployed using **Vercel**.
 
-### Deployment Steps
-
-1. Set up a **GitHub** repository for your project.
-2. Link your project to a deployment service like **Netlify** or **Vercel**.
-3. Once linked, the deployment service will automatically build and deploy the app whenever you push changes to the repository.
-
-### Example Deployment Command
-
-If using **Netlify** or **Vercel**, the deployment process is automatic. Just push your changes to the repository, and the app will be redeployed.
-
-For **manual deployment**, you can build the app and deploy it to a static host:
 
 ```bash
 npm run build
